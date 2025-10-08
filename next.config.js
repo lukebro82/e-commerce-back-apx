@@ -8,7 +8,7 @@ module.exports = {
           { key: "Access-Control-Allow-Credentials", value: "true" },
           {
             key: "Access-Control-Allow-Origin",
-            value: "http://localhost:3000",
+            value: "http://localhost:3001",
           }, // Cambia al puerto correcto
           {
             key: "Access-Control-Allow-Methods",
