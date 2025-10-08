@@ -1,8 +1,7 @@
-import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function middleware(req: NextRequest) {
-  if (req.method === "OPTIONS") {
+  if (req.method == "OPTIONS") {
     return new Response(null, {
       status: 204,
       headers: {
@@ -16,8 +15,6 @@ export function middleware(req: NextRequest) {
       },
     });
   }
-  // Permite continuar para otros métodos
-  return NextResponse.next();
 }
 
 export const config = {
